@@ -1,6 +1,8 @@
 package ceasar;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 
 public class FileService {
@@ -18,13 +20,16 @@ public class FileService {
             return sb.toString();
         } catch (Exception e) {
             return null;
-
         }
-
     }
 
-    public static void main(String[] args) {
-       String s = new FileService().read("Example.txt");
-        System.out.println(s);
+    void write(String s, String filename) {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(filename);
+            fileOutputStream.write(s.getBytes());
+            fileOutputStream.close();
+        } catch (Exception e) {
+            System.out.println("Як могла так і лажала при написанні цього Чуда!");
+        }
     }
 }
