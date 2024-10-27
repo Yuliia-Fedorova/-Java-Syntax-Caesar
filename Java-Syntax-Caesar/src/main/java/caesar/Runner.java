@@ -1,4 +1,4 @@
-package ceasar;
+package caesar;
 
 public class Runner {
     public static void main(String[] args) {

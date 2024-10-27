@@ -1,4 +1,4 @@
-package ceasar;
+package caesar;
 
 public class CaesarCipher {
     String ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

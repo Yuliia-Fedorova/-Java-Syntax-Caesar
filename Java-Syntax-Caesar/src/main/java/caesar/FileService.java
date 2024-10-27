@@ -1,7 +1,6 @@
-package ceasar;
+package caesar;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 
