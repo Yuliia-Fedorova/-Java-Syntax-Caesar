@@ -41,10 +41,5 @@ public class CaesarCipher {
         }
         return sb.toString();
     }
-    public static void main(String[] args) {
-        String s = new CaesarCipher().encrypt("Hello Z", 2);
-        System.out.println(s);
-        String s1 = new CaesarCipher().decrypt(s, 2);
-        System.out.println(s1);
-    }
+
 }
